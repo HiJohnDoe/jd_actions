@@ -1,4 +1,4 @@
-name: 京东年货节
+name: jd_nh 京东年货节
 
 on:
   workflow_dispatch:

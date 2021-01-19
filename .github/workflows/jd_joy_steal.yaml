@@ -1,4 +1,4 @@
-name: 宠汪汪偷好友
+name: jd_joy_steal 宠汪汪偷好友
 
 on:
   workflow_dispatch:

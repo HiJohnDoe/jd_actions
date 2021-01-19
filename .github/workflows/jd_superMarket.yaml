@@ -1,4 +1,4 @@
-name: 京小超
+name: jd_superMarket 京小超
 
 on:
   workflow_dispatch:
@@ -49,7 +49,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           npm install
-      - name: '运行 【京小超】'
+      - name: '【京小超】'
         if: env.JD_COOKIE
         run: |
           node actions.js

@@ -1,4 +1,4 @@
-name: 进店领京豆
+name: jd_shop 进店领京豆
 
 on:
   workflow_dispatch:

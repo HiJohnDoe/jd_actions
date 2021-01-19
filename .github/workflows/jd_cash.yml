@@ -1,4 +1,4 @@
-name: 签到领现金
+name: jd_cash 签到领现金
 
 on:
   workflow_dispatch:

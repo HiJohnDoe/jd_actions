@@ -1,4 +1,4 @@
-name: 京东汽车兑换
+name: jd_car_exchange 京东汽车兑换
 
 on:
   workflow_dispatch:

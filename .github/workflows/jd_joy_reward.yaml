@@ -1,4 +1,4 @@
-name: 宠汪汪积分兑换京豆
+name: jd_joy_reward 宠汪汪积分兑换京豆
 
 on:
   workflow_dispatch:

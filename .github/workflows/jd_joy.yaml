@@ -1,4 +1,4 @@
-name: 京东宠汪汪
+name: jd_joy 京东宠汪汪
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: 京喜农场
+name: jd_jxnc 京喜农场
 
 on:
   workflow_dispatch:

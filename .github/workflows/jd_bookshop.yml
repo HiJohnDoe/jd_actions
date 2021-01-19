@@ -1,4 +1,4 @@
-name: 口袋书店
+name: jd_bookshop 口袋书店
 
 on:
   workflow_dispatch:

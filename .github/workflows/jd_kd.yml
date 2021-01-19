@@ -1,4 +1,4 @@
-name: 京东快递
+name: jd_kd 京东快递
 
 on:
   workflow_dispatch:

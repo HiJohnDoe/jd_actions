@@ -1,4 +1,4 @@
-name: 京东抽奖机
+name: jd_lotteryMachine 京东抽奖机
 
 on:
   workflow_dispatch:

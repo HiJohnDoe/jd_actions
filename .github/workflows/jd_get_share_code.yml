@@ -1,4 +1,4 @@
-name: 获取互助码
+name: jd_get_share_code 获取互助码
 
 on:
   workflow_dispatch:

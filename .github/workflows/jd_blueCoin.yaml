@@ -1,4 +1,4 @@
-name: 京小超兑换奖品
+name: jd_blueCoin 京小超兑换奖品
 
 on:
   workflow_dispatch:

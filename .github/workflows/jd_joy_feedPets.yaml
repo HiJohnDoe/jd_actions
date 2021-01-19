@@ -1,4 +1,4 @@
-name: 宠汪汪喂食
+name: jd_joy_feedPets 宠汪汪喂食
 
 on:
   workflow_dispatch:

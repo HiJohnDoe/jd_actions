@@ -1,4 +1,4 @@
-name: 天天提鹅
+name: jd_daily_egg 天天提鹅
 
 on:
   workflow_dispatch:

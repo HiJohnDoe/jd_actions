@@ -1,4 +1,4 @@
-name: 京东家庭号
+name: jd_family 京东家庭号
 
 on:
   workflow_dispatch:

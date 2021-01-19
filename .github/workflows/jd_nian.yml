@@ -1,4 +1,4 @@
-name: 京东炸年兽
+name: jd_nian 京东炸年兽
 
 on:
   workflow_dispatch:

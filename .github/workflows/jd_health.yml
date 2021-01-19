@@ -1,4 +1,4 @@
-name: 健康抽奖机
+name: jd_health 健康抽奖机
 
 on:
   workflow_dispatch:

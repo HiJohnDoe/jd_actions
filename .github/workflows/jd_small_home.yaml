@@ -1,4 +1,4 @@
-name: 东东小窝
+name: jd_small_home 东东小窝
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: 天天加速
+name: jd_speed 天天加速
 
 on:
   workflow_dispatch:
@@ -45,7 +45,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           npm install
-      - name: '运行 【天天加速】'
+      - name: '【天天加速】'
         if: env.JD_COOKIE
         run: |
           node actions.js

@@ -1,4 +1,4 @@
-name: 金豆变动通知
+name: jd_bean_change 金豆变动通知
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: 京东直播
+name: jd_live 京东直播
 
 on:
   workflow_dispatch:

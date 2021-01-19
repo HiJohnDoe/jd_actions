@@ -1,4 +1,4 @@
-name: crazyJoy 领金币
+name: jd_crazy_joy_coin 领金币
 
 on:
   workflow_dispatch:

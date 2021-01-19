@@ -1,4 +1,4 @@
-name: 十元街
+name: jd_syj 十元街
 
 on:
   workflow_dispatch:
@@ -44,7 +44,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           npm install
-      - name: '运行 【十元街】'
+      - name: '【十元街】'
         if: env.JD_COOKIE
         run: |
           node actions.js

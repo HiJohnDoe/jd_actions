@@ -1,4 +1,4 @@
-name: 摇京豆活动
+name: jd_club_lottery 摇京豆活动
 
 on:
   workflow_dispatch:

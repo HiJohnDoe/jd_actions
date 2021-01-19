@@ -1,4 +1,4 @@
-name: 京东每日签到
+name: jd_bean_sign 京东每日签到
 
 on:
   workflow_dispatch:

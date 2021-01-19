@@ -1,4 +1,4 @@
-name: 京东炸年兽领爆竹
+name: jd_nianCollect 京东炸年兽领爆竹
 
 on:
   workflow_dispatch:

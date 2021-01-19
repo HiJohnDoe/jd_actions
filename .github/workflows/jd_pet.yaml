@@ -1,4 +1,4 @@
-name: 东东萌宠
+name: jd_pet 东东萌宠
 
 on:
   workflow_dispatch:

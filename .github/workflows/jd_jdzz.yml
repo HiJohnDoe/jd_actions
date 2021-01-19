@@ -1,4 +1,4 @@
-name: 京东赚赚
+name: jd_jdzz 京东赚赚
 
 on:
   workflow_dispatch:

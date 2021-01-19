@@ -1,4 +1,4 @@
-name: crazyJoy 任务
+name: jd_crazy_joy 任务
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: 注销京东会员卡
+name: jd_unbind 注销京东会员卡
 
 on:
   workflow_dispatch:
@@ -38,7 +38,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           npm install
-      - name: '运行 【注销京东会员卡】'
+      - name: '【注销京东会员卡】'
         if: env.JD_COOKIE
         run: |
           node actions.js

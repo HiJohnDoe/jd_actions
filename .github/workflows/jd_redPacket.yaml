@@ -1,4 +1,4 @@
-name: 全民开红包
+name: jd_redPacket 全民开红包
 
 on:
   workflow_dispatch:
