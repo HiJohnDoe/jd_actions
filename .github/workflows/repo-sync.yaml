@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: 同步 Actions_JX
+name: 同步 Actions_JX_mine
 on:
   schedule:
     - cron: '1 0,15 * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: Sync_Actions_JX
+    types: Sync_Actions_JX_mine
 jobs:
   repo-sync:
     env:
@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync Sync_Actions_JX
+      - name: sync Sync_Actions_JX_mine
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
