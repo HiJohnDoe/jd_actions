@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      URL: "https://raw.githubusercontent.com/HiJohnDoe/Actions_JX/master/jd_get_share_code.js"
+      URL: "https://raw.githubusercontent.com/HiJohnDoe/jd_checkin_action/master/jd_get_share_code.js"
       RUNFILE: "jd_get_share_code.js"
       JD_COOKIE: ${{ secrets.JD_COOKIE }}
       PUSH_KEY: ${{ secrets.PUSH_KEY }}
