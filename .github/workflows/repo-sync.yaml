@@ -23,7 +23,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/jiegto/Actions_JX.git"
-          source_branch: "main"
+          source_repo: "https://gitee.com/whiteeyes/Actions_JX.git"
+          source_branch: "mine"
           destination_branch: "main"
           github_token: ${{ secrets.PAT }}
