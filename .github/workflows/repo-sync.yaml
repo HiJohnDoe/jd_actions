@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: 同步 Actions_JX
+name: 同步 Actions_JX_mine
 on:
   schedule:
     - cron: '1 0,15 * * *'
