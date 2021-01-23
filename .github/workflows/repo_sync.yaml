@@ -40,6 +40,15 @@ jobs:
           source_branch: "main"
           destination_branch: "main"
           github_token: ${{ secrets.PAT }}
+
+      - name: sync lifeishard4me/Actions
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/lifeishard4me/Actions.git"
+          source_branch: "dev"
+          destination_branch: "dev"
+          github_token: ${{ secrets.PAT }}
       
       # 我自己同步到gitee使用，其他人可忽略
       - name: sync github -> gitee
