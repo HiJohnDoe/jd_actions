@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-LXK9301-scripts-&-Actions_JX
+name: sync-Repo-scripts
 on:
   schedule:
     - cron: '5 0,8,16 * * *'
@@ -9,7 +9,7 @@ on:
   push:
     branches: [ mine ]
   repository_dispatch:
-    types: sync-LXK9301-scripts-&-Actions_JX
+    types: sync-Repo-scripts
 jobs:
   repo-sync:
     env:
@@ -46,7 +46,7 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/lifeishard4me/Actions.git"
-          source_branch: "dev"
+          source_branch: "main"
           destination_branch: "dev"
           github_token: ${{ secrets.PAT }}
       
