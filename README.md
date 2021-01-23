@@ -3,6 +3,7 @@
 
 | Project | branch           |              usage           |
 | ------------ | -------------------------- | ---------------                   |
-|                    | mine   (default)                         |              for  sync           |
-|                    | master                           |              for  Nodejs scriptes           |
-|                    | main                                 |              for Github Actions           |
+|                    | main   (default)     |              for repo sync           |
+|                    | LXK9301                    |             https://github.com/LXK9301/jd_scripts.git           |
+|                    | jiegto                          |             https://github.com/jiegto/Actions_JX.git          |
+|                    | lifeishard4me         |             https://github.com/lifeishard4me/Actions.git          |
