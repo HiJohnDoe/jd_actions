@@ -28,7 +28,7 @@ jobs:
         with:
           source_repo: "https://github.com/LXK9301/jd_scripts.git"
           source_branch: "master"
-          destination_branch: "master"
+          destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
       
 
@@ -38,7 +38,7 @@ jobs:
         with:
           source_repo: "https://github.com/jiegto/Actions_JX.git"
           source_branch: "main"
-          destination_branch: "main"
+          destination_branch: "jiegto"
           github_token: ${{ secrets.PAT }}
 
       - name: sync lifeishard4me/Actions
@@ -47,7 +47,7 @@ jobs:
         with:
           source_repo: "https://github.com/lifeishard4me/Actions.git"
           source_branch: "main"
-          destination_branch: "dev"
+          destination_branch: "lifeishard4me"
           github_token: ${{ secrets.PAT }}
       
       # 我自己同步到gitee使用，其他人可忽略
