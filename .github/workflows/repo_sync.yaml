@@ -30,16 +30,6 @@ jobs:
           source_branch: "master"
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
-      
-
-      - name: sync jiegto/Actions_JX
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/jiegto/Actions_JX.git"
-          source_branch: "main"
-          destination_branch: "jiegto"
-          github_token: ${{ secrets.PAT }}
 
       - name: sync lifeishard4me/Actions
         uses: repo-sync/github-sync@v2
