@@ -22,7 +22,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync LXK9301-scripts
+      - name: sync LXK9301/jd_scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
@@ -32,7 +32,7 @@ jobs:
           github_token: ${{ secrets.PAT }}
       
 
-      - name: sync Actions_JX
+      - name: sync jiegto/Actions_JX
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
@@ -48,6 +48,15 @@ jobs:
           source_repo: "https://github.com/lifeishard4me/Actions.git"
           source_branch: "main"
           destination_branch: "lifeishard4me"
+          github_token: ${{ secrets.PAT }}
+      
+      - name: sync MrRight/Scripts
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://gitlab.com/MrRight/Scripts.git"
+          source_branch: "master"
+          destination_branch: "MrRight"
           github_token: ${{ secrets.PAT }}
       
       # 我自己同步到gitee使用，其他人可忽略
