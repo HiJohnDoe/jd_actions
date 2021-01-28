@@ -1,4 +1,4 @@
-## This Repo usage: Regular updates source code of 'jd auto checkin'.
+### This Repo usage: Regular updates source code of repoes for JD auto checkin.
   
   
 
