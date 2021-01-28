@@ -11,7 +11,7 @@ on:
   repository_dispatch:
     types: sync-Repo-scripts
 jobs:
-  repo-sync:
+  repo-sync：LXK9301/jd_scripts:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
@@ -21,7 +21,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-
       - name: sync LXK9301/jd_scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -31,6 +30,16 @@ jobs:
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
 
+  repo-sync：lifeishard4me/Actions:
+    env:
+      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: sync lifeishard4me/Actions
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -40,6 +49,16 @@ jobs:
           destination_branch: "lifeishard4me"
           github_token: ${{ secrets.PAT }}
       
+  repo-sync：MrRight/Scripts:
+    env:
+      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: sync MrRight/Scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -49,6 +68,16 @@ jobs:
           destination_branch: "MrRight"
           github_token: ${{ secrets.PAT }}
       
+  repo-sync：github -> gitee:
+    env:
+      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       # 我自己同步到gitee使用，其他人可忽略
       - name: sync github -> gitee
         uses: Yikun/hub-mirror-action@master
