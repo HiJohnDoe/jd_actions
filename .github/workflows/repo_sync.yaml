@@ -11,7 +11,7 @@ on:
   repository_dispatch:
     types: sync-Repo-scripts
 jobs:
-  repo-sync：LXK9301/jd_scripts:
+  repo-sync-LXK9301:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
@@ -30,7 +30,7 @@ jobs:
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
 
-  repo-sync：lifeishard4me/Actions:
+  repo-sync-lifeishard4me:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
@@ -49,7 +49,7 @@ jobs:
           destination_branch: "lifeishard4me"
           github_token: ${{ secrets.PAT }}
       
-  repo-sync：MrRight/Scripts:
+  repo-sync-MrRight:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
@@ -68,7 +68,7 @@ jobs:
           destination_branch: "MrRight"
           github_token: ${{ secrets.PAT }}
       
-  repo-sync：github -> gitee:
+  repo-sync-gitee:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
       dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
