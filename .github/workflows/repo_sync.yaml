@@ -29,6 +29,17 @@ jobs:
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
 
+      # 我自己同步到gitee使用，其他人可忽略
+      - name: sync github -> gitee
+        uses: Yikun/hub-mirror-action@master
+        if: env.dst_key
+        with:
+          src: github/HiJohnDoe
+          dst: gitee/whiteeyes
+          static_list: "jd_actions"
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+
   repo-sync-lifeishard4me:
     env:
       PAT: ${{ secrets.PAT }} 
@@ -64,23 +75,4 @@ jobs:
           source_branch: "master"
           destination_branch: "MrRight"
           github_token: ${{ secrets.PAT }}
-      
-  repo-sync-gitee:
-    env:
-      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-      # 我自己同步到gitee使用，其他人可忽略
-      - name: sync github -> gitee
-        uses: Yikun/hub-mirror-action@master
-        if: env.dst_key
-        with:
-          src: github/HiJohnDoe
-          dst: gitee/whiteeyes
-          static_list: "jd_actions"
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
+    
