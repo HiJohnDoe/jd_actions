@@ -8,10 +8,10 @@
 Detail:
 |    Project   | branch               |                 usage               |
 | ------------ | -------------------------------------- | ---------------   |
-|  jd_actions  | main   (default)     |              For repo sync and backup          |
-|              | LXK9301              |             https://gitee.com/lxk0301/jd_scripts.git           |
-|              | MrRight              |             https://gitlab.com/MrRight/Scripts.git          |
-|              | lifeishard4me        |             https://github.com/lifeishard4me/Actions.git          |
+|  jd_actions  | main   (default)     |              Do github action for repo synchronic and backup          |
+|              | LXK9301              |             sync from: https://gitee.com/lxk0301/jd_scripts.git           |
+|              | MrRight              |             sync from: https://gitlab.com/MrRight/Scripts.git          |
+|              | lifeishard4me        |             sync from: https://github.com/lifeishard4me/Actions.git          |
 
 Time schedule:
 |    Type  |        Time               |
