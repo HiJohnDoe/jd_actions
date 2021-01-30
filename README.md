@@ -2,7 +2,7 @@
   
 
 #### Repo url:
-> Github: https://gitee.com/whiteeyes/jd_actions.git  
+> Github: https://github.com/HiJohnDoe/jd_actions.git  
 > Gitee(backup): https://gitee.com/whiteeyes/jd_actions.git  
 
 Detail:
