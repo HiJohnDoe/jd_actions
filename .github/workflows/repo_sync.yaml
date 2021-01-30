@@ -14,6 +14,7 @@ jobs:
   repo-sync-LXK9301:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} # 我自己同步到gitee使用，其他人可忽略: 
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
@@ -28,7 +29,6 @@ jobs:
           source_branch: "master"
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
-
       # 我自己同步到gitee使用，其他人可忽略
       - name: sync github -> gitee
         uses: Yikun/hub-mirror-action@master
