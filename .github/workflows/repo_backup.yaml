@@ -2,7 +2,7 @@
 name: repo-backup
 on:
   schedule:
-    - cron: '20 0,8,16 * * *'
+    - cron: '20 */2 * * *'
   workflow_dispatch:
 #   watch:
 #     types: started
