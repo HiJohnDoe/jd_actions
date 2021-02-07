@@ -29,38 +29,38 @@ jobs:
           destination_branch: "LXK9301"
           github_token: ${{ secrets.PAT }}
 
-  repo-sync-lifeishard4me:
-    env:
-      PAT: ${{ secrets.PAT }} 
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-      - name: sync lifeishard4me/Actions
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/lifeishard4me/Actions.git"
-          source_branch: "main"
-          destination_branch: "lifeishard4me"
-          github_token: ${{ secrets.PAT }}
+  # repo-sync-lifeishard4me:
+  #   env:
+  #     PAT: ${{ secrets.PAT }} 
+  #   runs-on: ubuntu-latest
+  #   if: github.event.repository.owner.id == github.event.sender.id
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         persist-credentials: false
+  #     - name: sync lifeishard4me/Actions
+  #       uses: repo-sync/github-sync@v2
+  #       if: env.PAT
+  #       with:
+  #         source_repo: "https://github.com/lifeishard4me/Actions.git"
+  #         source_branch: "main"
+  #         destination_branch: "lifeishard4me"
+  #         github_token: ${{ secrets.PAT }}
       
-  repo-sync-MrRight:
-    env:
-      PAT: ${{ secrets.PAT }} 
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-      - name: sync MrRight/Scripts
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://gitlab.com/MrRight/Scripts.git"
-          source_branch: "master"
-          destination_branch: "MrRight"
-          github_token: ${{ secrets.PAT }}
+  # repo-sync-MrRight:
+  #   env:
+  #     PAT: ${{ secrets.PAT }} 
+  #   runs-on: ubuntu-latest
+  #   if: github.event.repository.owner.id == github.event.sender.id
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         persist-credentials: false
+  #     - name: sync MrRight/Scripts
+  #       uses: repo-sync/github-sync@v2
+  #       if: env.PAT
+  #       with:
+  #         source_repo: "https://gitlab.com/MrRight/Scripts.git"
+  #         source_branch: "master"
+  #         destination_branch: "MrRight"
+  #         github_token: ${{ secrets.PAT }}
