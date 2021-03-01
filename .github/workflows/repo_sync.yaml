@@ -11,7 +11,7 @@ on:
   repository_dispatch:
     types: sync-Repo-scripts
 jobs:
-  repo-sync-LXK9301:
+  repo-sync-LXK9301-docker:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
     runs-on: ubuntu-latest
