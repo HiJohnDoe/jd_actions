@@ -20,13 +20,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: sync LXK9301/jd_scripts
+      - name: sync LXK9301/jd_docker
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://gitee.com/lxk0301/jd_scripts.git"
+          source_repo: "https://gitee.com/lxk0301/jd_docker.git"
           source_branch: "master"
-          destination_branch: "LXK9301"
+          destination_branch: "LXK9301_docker"
           github_token: ${{ secrets.PAT }}
 
   # repo-sync-lifeishard4me:

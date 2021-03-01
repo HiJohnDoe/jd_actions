@@ -9,7 +9,8 @@ Detail:
 |    Project   | branch               |                 usage               |
 | ------------ | -------------------------------------- | ---------------   |
 |  jd_actions  | main   (default)     |              Do github action for repo synchronic and backup          |
-|              | LXK9301              |             sync from: https://gitee.com/lxk0301/jd_scripts.git           |
+|              | LXK9301_docker           |             sync from: https://gitee.com/lxk0301/jd_docker.git           |
+|              | ~~LXK9301~~              |             ~~sync from: https://gitee.com/lxk0301/jd_scripts.git~~           |
 |              | ~~MrRight~~              |             ~~sync from: https://gitlab.com/MrRight/Scripts.git~~          |
 |              | ~~lifeishard4me~~        |             ~~sync from: https://github.com/lifeishard4me/Actions.git~~          |
 
