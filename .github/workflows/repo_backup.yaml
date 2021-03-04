@@ -2,14 +2,14 @@
 name: repo-backup
 on:
   schedule:
-    - cron: '20 */2 * * *'
+    - cron: '20 18 * * *'
   workflow_dispatch:
 #   watch:
 #     types: started
   push:
     branches: [ main ]
-  repository_dispatch:
-    types: sync-Repo-scripts
+  # repository_dispatch:
+  #   types: sync-Repo-scripts
 jobs:
   repo-sync-gitee:
     env:
