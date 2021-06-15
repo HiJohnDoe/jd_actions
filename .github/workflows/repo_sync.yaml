@@ -11,23 +11,23 @@ on:
   # repository_dispatch:
   #   types: repo_sync
 jobs:
-  repo-sync-LXK9301-docker:
-    env:
-      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-      - name: sync LXK9301/jd_docker
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://gitee.com/lxk0301/jd_docker.git"
-          source_branch: "master"
-          destination_branch: "LXK9301_docker"
-          github_token: ${{ secrets.PAT }}
+  # repo-sync-LXK9301-docker:
+  #   env:
+  #     PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+  #   runs-on: ubuntu-latest
+  #   if: github.event.repository.owner.id == github.event.sender.id
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         persist-credentials: false
+  #     - name: sync LXK9301/jd_docker
+  #       uses: repo-sync/github-sync@v2
+  #       if: env.PAT
+  #       with:
+  #         source_repo: "https://gitee.com/lxk0301/jd_docker.git"
+  #         source_branch: "master"
+  #         destination_branch: "LXK9301_docker"
+  #         github_token: ${{ secrets.PAT }}
 
   # repo-sync-lifeishard4me:
   #   env:
@@ -64,3 +64,21 @@ jobs:
   #         source_branch: "master"
   #         destination_branch: "MrRight"
   #         github_token: ${{ secrets.PAT }}
+
+  repo-sync-chinnkarahoi:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: sync chinnkarahoi/Scripts
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/chinnkarahoi/jd_scripts.git"
+          source_branch: "master"
+          destination_branch: "chinnkarahoi"
+          github_token: ${{ secrets.PAT }}
